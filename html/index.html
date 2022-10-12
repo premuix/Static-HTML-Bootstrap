@@ -27,7 +27,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navBar  navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a> 
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Services</a>
@@ -64,10 +64,11 @@
               </ul>
             </div>
           </div>
-          <div class="w-75 text-secondary pb-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          <div class="w-75 text-secondary pb-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
             velit esse cillum dolore eu fugiat nulla pariatur.</div>
+            <button class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#pickUpDate" >Book Now</button>
         </div>
       </div>
     </section>
@@ -89,7 +90,7 @@
               <h2 class="card-title pricing-card-title text-primary">Lamborghini</h2>
               <h3 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/ph</small></h3>
               <p class="card-text ">Some quick example text to build on the card title and make up the bulk</p>
-              <button type="button" class="w-100 btn  btn-primary">Sign up for free</button>
+              <button type="button" class="w-100 btn  btn-primary">Book Now</button>
             </div>
           </div>
         </div>
@@ -209,7 +210,7 @@
       crossorigin="anonymous"></script>
   </footer>
 
-  <!-- Vertically centered modal -->
+  <!-- Vertically centered modal Login -->
   <div class="modal fade" id="popUpLogin">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content pb-4">
@@ -228,6 +229,54 @@
           </div>
           <button type="button" class="w-100 btn btn-primary btn-lg mt-3 py-3 fw-bold"
             data-bs-dismiss="modal">LOGIN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vertically centered modal PickUp date time -->
+  <div class="modal fade modal-lg" id="pickUpDate">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content pb-4">
+        <div class="modal-header border-bottom-0">
+          <h2 class="fs-4">User Account</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="./Lamborghini.html" method="GET">
+          <div class="row g-2">
+            
+            <div class="col-md">
+              <div class="form-floating">
+                <input type="date" class="form-control" id="floatingInputGrid" placeholder="Date" value="dd/mm/yyyy">
+                <label for="floatingSelectGrid">Pick Date</label>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid">
+                  <option selected>Lamborghini</option>
+                  <option value="1">Lamborghini</option>
+                  <option value="2">Porsche</option>
+                  <option value="3">Ferrari</option>
+                </select>
+                <label for="floatingSelectGrid">Select Car</label>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="form-floating">
+                <input type="time" class="form-control" id="floatingInputGrid" placeholder="Time" value="24">
+                <label for="floatingInputGrid">Pick Time</label>
+              </div>
+            </div>
+
+          </div>
+          
+          <button type="submit" value="Submit" class="w-100 btn btn-primary btn-lg mt-3 py-3 fw-bold"
+            href="./Lamborghini.html" >Book</button>
+          </form>
         </div>
       </div>
     </div>
