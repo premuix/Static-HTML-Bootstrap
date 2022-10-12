@@ -11,9 +11,12 @@
   <!--- Custom overwrite CSS only --->
   <link href="./assets/styles/custom.css" rel="stylesheet">
   <title>Car on Rental</title>
+
+ 
 </head>
 
 <body>
+
   <header>
     <div class="container">
       <nav class="navbar navbar-expand-lg ">
@@ -50,23 +53,24 @@
         <div class="selection-car d-flex flex-column flex-row align-items-center justify-content-center py-5">
           <div class="pt-3">
             <h1 class="fs-1 fw-normal text-white">Select your favourite Car</h1>
-          </div>
+          </div> 
           <div class="my-4">
+           
             <div class="dropdown">
               <button class="btn btn-lg btn-primary dropdown-toggle p-3  px-5" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Select Your Car
               </button>
               <ul class="dropdown-menu w-100">
-                <li><a class="dropdown-item" href="./Lamborghini.html">Lamborghini</a></li>
-                <li><a class="dropdown-item" href="./Porsche.html">Porsche</a></li>
-                <li><a class="dropdown-item" href="./Ferrari.html">Ferrari</a></li>
+                <li><a class="dropdown-item" href="#Lambo">Lamborghini</a></li>
+                <li><a class="dropdown-item" href="#Pors">Porsche</a></li>
+                <li><a class="dropdown-item" href="#Ferr">Ferrari</a></li>
               </ul>
             </div>
           </div>
           <div class="w-75 text-secondary pb-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
             velit esse cillum dolore eu fugiat nulla pariatur.</div>
             <button class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#pickUpDate" >Book Now</button>
         </div>
@@ -77,13 +81,8 @@
   <section>
     <div class="container pt-5 mt-4">
 
-
-
-
-
-
       <div class="row row-cols-1 row-cols-lg-3 mb-3 text-center">
-        <div class="col">
+        <div class="col" id="Lambo">
           <div class="card mb-4 rounded-3 border-0">
             <img class="card-img-top" src="./assets/images/cars/Lamborghini-1.png" />
             <div class="card-body">
@@ -117,7 +116,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col" id="Pors">
           <div class="card mb-4 rounded-3 border-0">
             <img class="card-img-top" src="./assets/images/cars/Porsche-1.png" />
             <div class="card-body">
@@ -153,7 +152,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col" id="Ferr">
           <div class="card mb-4 rounded-3 border-0">
             <img class="card-img-top" src="./assets/images/cars/Ferrari-1.png" />
             <div class="card-body">
@@ -239,7 +238,7 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content pb-4">
         <div class="modal-header border-bottom-0">
-          <h2 class="fs-4">User Account</h2>
+          <h2 class="fs-4">Book Car</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
